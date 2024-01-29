@@ -8,7 +8,7 @@ The goal of this assignment is to create a program that uses a linked-list to st
 - Peek: a method to peek the front and/or rear value of the queue without removing it. 
 
 
-First Step:
+Design:
 
 Understand what is a linked list:
 
@@ -16,4 +16,6 @@ Understand what is a linked list:
 
 A linked list is formed of several Nodes, each Node stores a data and the address that points to the next node. 
 For my program I will create a struct Node. This way a Node will be a "data type" and all Nodes will be under the same structure making it easier to work with them.
+
+To implement the queue I could have done it a class or a struct. A struct would set everything to public, while a class is private by defafult. I choose to make the queue a class, because it is easier for me to work with functions/methods under a class. 
 
