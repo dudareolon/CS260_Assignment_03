@@ -23,13 +23,27 @@ Understand what is a linked list:
 A linked list is formed of several Nodes, each Node stores data and the address that points to the next node. 
 For my program, I will create a struct Node. This way a Node will be a "data type" and all Nodes will be under the same structure making it easier to work with them.
 
-To implement the queue I could have done it in a class or a struct. A struct would set everything to the public, while a class is private by default. I choose to make the queue a class because it is easier for me to work with functions/methods under a class. Here is the schematics for the class:
+To implement the queue I could have done it in a class or a struct. A struct would set everything to the public, while a class is private by default. I chose to make the queue a class because it is easier for me to work with functions/methods under a class. Here is the schematics for the class:
 
 ![image](https://github.com/dudareolon/CS260_Assignment_03/assets/102680672/bcb2deda-88b8-4155-a544-b9ea553922d5)
 
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Analyze the complexity of your implementations (at least the run-time of the add, remove, and peek methods):
+
+  When analyzing the complexity of an implementation it is important to understand what the Asymptotic Big-O notation is. The Asymptotic Big-O notation measures the complexity of a program, providing an upper bound limit on the worst-case performance of the program. The notation is an O followed by a function for the upper limit as you can see below:
+
+  ![image](https://github.com/dudareolon/CS260_Assignment_03/assets/102680672/80ea6f20-c1c8-4204-ac58-5d00b1b5da02)
+
+  From my Assembly coding background, I like to think of the complexity of a program on how many clock cycles it takes to run all lines of the program. For example, programs that have loops, nested loops, and such, take a longer time to run than code like mine that is linear. Since my program for this assignment runs line by line, it is considered under the O(1) notation due to its constant time. It is also important to note that C++ and other languages ignore comment lines when running the program, so having a lot of comments does not change the run-time of the program.
+
+  The time complexity for my entire code is O(1). However, the space complexity is O(n) being that n is the number of nodes in the queue; that is because each node in the queue is dynamically allocated in the memory.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 The parts of the code where I meet each one of the requirements are the following:
 
