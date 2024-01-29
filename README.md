@@ -25,3 +25,28 @@ For my program I will create a struct Node. This way a Node will be a "data type
 
 To implement the queue I could have done it a class or a struct. A struct would set everything to public, while a class is private by defafult. I choose to make the queue a class, because it is easier for me to work with functions/methods under a class. 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The parts of the code where I meet each one of the requirements are the following:
+
+- Requirement 1: uses a linked-list to store values in the queue:
+
+Defines what a Node of the linked-list will be
+
+  ![image](https://github.com/dudareolon/CS260_Assignment_03/assets/102680672/3b9ca200-d2d9-4cd6-97ba-b85a14a1fd04)
+
+Then makes the rear and front pointers of the queue to be nodes and initializes the queue to be empty
+
+  ![image](https://github.com/dudareolon/CS260_Assignment_03/assets/102680672/c80e24b7-dd16-4a9d-a041-1e598c7dfd8e)
+
+
+
+
+- Requirement 2:
+
+- Requirement 3:
+
+- Requirement 4:
+
+
+
