@@ -42,11 +42,22 @@ Then makes the rear and front pointers of the queue to be nodes and initializes 
 
 
 
-- Requirement 2:
+- Requirement 2: has an enqueue method that will appropriately add a value to the back of the queue as an appropriate element:
 
-- Requirement 3:
+![image](https://github.com/dudareolon/CS260_Assignment_03/assets/102680672/d52dba79-78f3-4865-a4bc-d2c80a418976)
 
-- Requirement 4:
+  
 
+- Requirement 3: has a dequeue method that will appropriately remove an element from the front of the queue and return its value:
 
+![image](https://github.com/dudareolon/CS260_Assignment_03/assets/102680672/badf5ab9-dd11-4c0f-a26a-40b26e9f334f)
 
+  
+
+- Requirement 4: Optionally has a peek method that returns the value at the front of the queue without removing it:
+
+![image](https://github.com/dudareolon/CS260_Assignment_03/assets/102680672/0f126002-4ce9-41da-9d23-f4f1ac81236f)
+
+I also made an extra peek function that returns the value at the rear/back of the queue without removing it. Here it is:
+
+![image](https://github.com/dudareolon/CS260_Assignment_03/assets/102680672/abfb6f39-1a41-45cf-88ad-10b138a0cc1c)
