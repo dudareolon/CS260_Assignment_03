@@ -1,15 +1,18 @@
 # CS260_Assignment_03
 Linked Queue
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Important Observation: I was only able to get Git correctly installed on my computer withe the help of my classmates and that was after I was already done with a properly working code. So for this assignment again I only have one commit to the code, and I transfered my README file to this github repository. But for assignment 04 and on I will be able to make several commits to my code so that you can properly see my thought process when implementing my designs. 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The goal of this assignment is to create a program that uses a linked-list to store values in a queue. The queue must have the ability to:
 - Enqueue: appropriately add a value to the back of the queue as an appropriate element;
 - Dequeue: appropriately remove an element from the front of the queue and return its value;
 - Peek: a method to peek the front and/or rear value of the queue without removing it. 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Design:
 
