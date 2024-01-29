@@ -25,8 +25,7 @@ For my program, I will create a struct Node. This way a Node will be a "data typ
 
 To implement the queue I could have done it in a class or a struct. A struct would set everything to the public, while a class is private by default. I choose to make the queue a class because it is easier for me to work with functions/methods under a class. Here is the schematics for the class:
 
-![image](https://github.com/dudareolon/CS260_Assignment_03/assets/102680672/262be2a2-5a23-489b-8929-132c406a3291)
-
+![image](https://github.com/dudareolon/CS260_Assignment_03/assets/102680672/bcb2deda-88b8-4155-a544-b9ea553922d5)
 
 
 
