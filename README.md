@@ -23,7 +23,12 @@ Understand what is a linked list:
 A linked list is formed of several Nodes, each Node stores data and the address that points to the next node. 
 For my program, I will create a struct Node. This way a Node will be a "data type" and all Nodes will be under the same structure making it easier to work with them.
 
-To implement the queue I could have done it in a class or a struct. A struct would set everything to the public, while a class is private by default. I choose to make the queue a class because it is easier for me to work with functions/methods under a class. 
+To implement the queue I could have done it in a class or a struct. A struct would set everything to the public, while a class is private by default. I choose to make the queue a class because it is easier for me to work with functions/methods under a class. Here is the schematics for the class:
+
+![image](https://github.com/dudareolon/CS260_Assignment_03/assets/102680672/262be2a2-5a23-489b-8929-132c406a3291)
+
+
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
