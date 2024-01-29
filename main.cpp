@@ -14,7 +14,7 @@ using std::endl;
 
 // Each 'cell' in the linked list is called a Node. This struct defines what a Node is.
 struct Node {
-    // each node in a linked list is formed of a slot for the data and a slot for a pointer address that points to the next node in 
+    //Each node in a linked list is formed of a slot for the data and a slot for a pointer address that points to the next node in 
     // the linked list
     int data; // the nodes will only store integer values
     Node* next; // the node will store the memory address of the next node in the linked list (this is the pointer) 
@@ -24,12 +24,12 @@ struct Node {
 class Queue {
 
     // a struct is set by default public while a class is private
-    // the values inside this class will be used out of it so I had to make them public
-    // I tried to make Queue a struct and not a class but I struggled coding the methods with the struct
+    //The values inside this class will be used out of it so I had to make them public
+    // I tried to make Queue a struct and not a class but I struggled to code the methods with the struct
     public:
     
     // Create two general pointers under the struct Node that will point to the front and rear locations of the queue
-    // Think of them like assigning a value to a variable, but instead you are assigning a value to a pointer
+    // Think of them like assigning a value to a variable, but instead, you are assigning a value to a pointer
     Node* front;
     Node* rear;
 
@@ -37,15 +37,15 @@ class Queue {
     // This function initializes an empty queue
     void initialize() {
 
-        front = nullptr; // nullptr represents a null pointer value, which means that the pointers does not point to an object
+        front = nullptr; // nullptr represents a null pointer value, which means that the pointers do not point to an object
         rear = nullptr;
-        // Having both the front and rear pointers pointing to nullptr indicates that the queue is empty, in other words there are no
+        // Having both the front and rear pointers pointing to nullptr indicates that the queue is empty, in other words, there are no
         // elements in the queue for the front and the rear pointer to point to
     }
 
     // Checks if the queue is empty
     bool isEmpty() const { // Returns a true or false
-        return front == nullptr; // Could have been with the rear pointer as well, since both point to nullptr when queue is empty
+        return front == nullptr; // Could have been with the rear pointer as well, since both point to nullptr when the queue is empty
     }
 
     // Function to add a value to the back/rear of the queue
@@ -56,7 +56,7 @@ class Queue {
         // 
         // Dynamically allocates memory for a new instance of the Node struct:
         // The data will be the value input by the user when calling the function
-        // The Node instead of pointing to next, it will point to nullptr, because the added node is currently the last one in the queue
+        // The Node instead of pointing to next, will point to nullptr, because the added node is currently the last one in the queue
         Node* addressNewNode = new Node{value, nullptr};
 
         //Check if the queue was empty and the newly added node is the only node in the queue
@@ -78,7 +78,7 @@ class Queue {
     // This function removes an element from the front of the queue
     // First In, First Out principle (FIFO)
     int dequeue() {
-        // Check if queue is empty
+        // Check if the queue is empty
         if (isEmpty()) {
             // return error message and 0 in case the queue is empty
             rear == nullptr;
@@ -98,14 +98,14 @@ class Queue {
     // Returns the value at the front of the queue without removing it
     int front_peek() {
         if (isEmpty()) {
-            // In case queue is empty, it corrects the rear pointer to make sure it is pointing to nullptr as well 
+            // In case the queue is empty, it corrects the rear pointer to make sure it is pointing to nullptr as well 
             rear == nullptr;
             cout << "Can't peek what the front value of the queue is because the queue is empty" << endl;
             cout << endl;
             return 0;
         }
         int front_data = front->data; // return the data of the node the front pointer is pointing to
-        // it must be 'data' because that is how the struct Node was set
+        //It must be 'data' because that is how the struct Node was set
 
         cout << "The number at the front of the queue is " << front_data << endl ;
         cout << endl;
@@ -156,7 +156,7 @@ int main() {
     // Output:
     // 10 was added to the queue
     // The number at the front of the queue is 10
-    // The number in the end of the queue is 10
+    // The number at the end of the queue is 10
     // Correct
 
     // Test 3 
@@ -178,7 +178,7 @@ int main() {
     Testing_Queue.enqueue(0);
     Testing_Queue.front_peek();
     Testing_Queue.back_peek();
-    // Front should be pointing to the node 20 and rear should be pointing to 0
+    //The front should be pointing to node 20 and the rear should be pointing to 0
     // Output:
     // The number at the front of the queue is 20
     // The number in the end of the queue is 0
@@ -192,17 +192,17 @@ int main() {
     // Correct
 
     // Test 5
-    // Check if after a variable was removed that the front pointer would adjust and if the rear pointer would remain pointing to the last variable in
+    // Check if after a variable was removed the front pointer would adjust and if the rear pointer would remain pointing to the last variable in
     Testing_Queue.front_peek();
     Testing_Queue.back_peek();
     // Output:
     // The number at the front of the queue is 30 (updated to the variable added right after 20 was added)
-    // The number in the end of the queue is 0 (remained the same)
+    // The number at the end of the queue is 0 (remained the same)
     // Correct
 
     // Test 6
     // Remove more variables than there are in the queue and then try to check for the value the rear pointer is indicating
-    // Check if rear pointer is updating when the queue gets empty
+    // Check if the rear pointer is updating when the queue gets empty
     Testing_Queue.dequeue();
     Testing_Queue.dequeue();
     Testing_Queue.dequeue();
@@ -212,7 +212,7 @@ int main() {
     Testing_Queue.dequeue();
     Testing_Queue.back_peek();
     // Output:
-    // 0 was removed from the queue (last number from the queue is removed)
+    // 0 was removed from the queue (the last number from the queue is removed)
     // Can't remove a value from the queue because the queue is empty (error message)
     // Can't remove a value from the queue because the queue is empty (error message)
     // Can't peek what the rear value of the queue is because the queue is empty (error message)
